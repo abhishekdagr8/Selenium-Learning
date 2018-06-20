@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
+  <listeners>
+    <listener class-name="com.ibm.genericUtility.Listeners"/>
+  </listeners>
+  <test name="Test1(failed)" parallel="methods">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="appURL" value="http://sfeq01.twutil.net:8055/sap/bc/ui2/flp/Fiorilaunchpad.html"/>
+    <classes>
+      <class name="com.thamesWater.fiori.CreateLeaveRequest">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterSuite"/>
+          <include name="CreateLeaveRequestTestOne"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.thamesWater.fiori.CreateLeaveRequest -->
+      <class name="com.thamesWater.fiori.CreateLeaveRequest2">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterSuite"/>
+          <include name="CreateLeaveRequestTestTwo"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.thamesWater.fiori.CreateLeaveRequest2 -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
