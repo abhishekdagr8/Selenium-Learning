@@ -218,12 +218,8 @@ public class CreateLeaveRequest extends DriverBase {
 			flag="success";
 		}catch(Exception e) {
 			e.printStackTrace();
-			System.out.println("Test");
-
+			System.out.println("Test update");
 		}
-		
 		return flag;
-		
-		
 	}
 }
